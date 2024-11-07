@@ -1,0 +1,26 @@
+name: CI
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+jobs:
+  deploy-documentation:
+    name: Build & deploy documentation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Build docker image
+        run: docker build . -t pypas-doc
+      - name: Build documentation in html
+        run: docker run --rm -v .:/code pypas-doc
+      - name: Sync files with production server
+        uses: burnett01/rsync-deployments@4.1
+        with:
+          switches: -avzr --delete
+          path: site/
+          remote_host: pypas.es
+          remote_path: ${{ secrets.REMOTE_BUILD_PATH }}
+          remote_user: ${{ secrets.REMOTE_USER }}
+          remote_key: ${{ secrets.REMOTE_KEY }}
