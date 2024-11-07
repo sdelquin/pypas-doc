@@ -1,0 +1,5 @@
+mkdocs==1.6.1
+pymdown-extensions==10.12
+markdown-callouts==0.4.0
+mdx-gh-links==0.4
+i18n==0.2
