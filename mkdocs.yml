@@ -21,5 +21,7 @@ markdown_extensions:
   - mdx_gh_links:
       user: sdelquin
       repo: pypas-cli
+hooks:
+  - hooks.py
 
 copyright: Copyright &copy; Sergio Delgado Quintero<br>sdelquin@gmail.com

@@ -1,2 +1,6 @@
 .DS_Store
 .venv
+/site
+*.pyc
+__pycache__
+.mypy_cache
