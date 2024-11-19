@@ -1,0 +1,20 @@
+:root {
+  --primary-color: #419285;
+  --primary-color-accent: #257265;
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.navbar.bg-primary {
+  background-image: none;
+}
+
+li.nav-item a {
+  color: var(--primary-color);
+
+  &:hover {
+    color: var(--primary-color-accent);
+  }
+}

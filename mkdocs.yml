@@ -7,6 +7,7 @@ theme:
   name: mkdocs
   user_color_mode_toggle: true
   locale: es
+  color_mode: dark
 markdown_extensions:
   - toc:
       permalink: 
@@ -23,5 +24,7 @@ markdown_extensions:
       repo: pypas-cli
 hooks:
   - hooks.py
+extra_css:
+  - custom.css
 
 copyright: Copyright &copy; Sergio Delgado Quintero<br>sdelquin@gmail.com
