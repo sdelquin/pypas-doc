@@ -18,3 +18,9 @@ li.nav-item a {
     color: var(--primary-color-accent);
   }
 }
+
+span#pypas-cli-version {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-style: double;
+}
