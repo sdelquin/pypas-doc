@@ -1,7 +1,7 @@
 # Run development server
 serve:
-    mkdocs serve
+    uv run mkdocs serve
 
 # Build project
 build:
-    mkdocs build
+    uv run mkdocs build
