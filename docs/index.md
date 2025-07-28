@@ -70,7 +70,7 @@ pypas upgrade
 > - **pipx** → `pipx upgrade pypas-cli`
 
 > NOTE: **ÚLTIMA VERSIÓN**
-> La última versión disponible de <a href="https://pypi.org/project/pypas-cli/">pypas-cli</a> es la **{{pypas_cli_version}}**
+> La última versión disponible de <a href="https://pypi.org/project/pypas-cli/">pypas-cli</a> es la <span id="pypas-cli-version"></span>
 
 ## Listar los ejercicios
 

@@ -8,6 +8,7 @@ theme:
   user_color_mode_toggle: true
   locale: es
   color_mode: dark
+  favicon: static/images/favicon.ico
 markdown_extensions:
   - toc:
       permalink: 
@@ -22,9 +23,9 @@ markdown_extensions:
   - mdx_gh_links:
       user: sdelquin
       repo: pypas-cli
-hooks:
-  - hooks.py
 extra_css:
-  - custom.css
+  - static/css/custom.css
+extra_javascript:
+  - static/js/custom.js
 
 copyright: Copyright &copy; Sergio Delgado Quintero<br>sdelquin@gmail.com
