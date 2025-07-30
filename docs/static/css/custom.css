@@ -24,3 +24,23 @@ span#pypas-cli-version {
   text-decoration: underline;
   text-decoration-style: double;
 }
+
+a.version {
+  font-weight: bold;
+  font-size: smaller;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+
+  &::before {
+    content: "ⓥ";
+    margin-right: 0.2rem;
+  }
+
+  &:hover {
+    color: white;
+    background-color: var(--primary-color);
+  }
+}

@@ -295,6 +295,23 @@ pypas log -f <frame>
 >? INFO: **Requiere autenticación** 
 > Este comando necesita estar previamente [autenticado/a](#autenticarse-como-usuario).
 
+## Obtener tus entregas
+
+<a class="version" href="#actualizacion">0.2.0</a>
+
+Puedes obtener (descargar) tus entregas a través del siguiente comando:
+
+```console
+pypas pull foo
+```
+
+En este caso se descargará el ejercicio `foo` con el código que subiste en su momento o bien todos los ejercicios (que has subido) del «frame» `foo`.
+
+Por lo tanto sirve tanto para un ejercicio en concreto como para todos los ejercicios de un determinado «frame».
+
+>? INFO: **Requiere autenticación** 
+> Este comando necesita estar previamente [autenticado/a](#autenticarse-como-usuario).
+
 ## Miscelánea
 
 - `pypas --version` te proporciona la **versión actual instalada** del paquete `pypas-cli`.
