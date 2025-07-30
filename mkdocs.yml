@@ -27,5 +27,12 @@ extra_css:
   - static/css/custom.css
 extra_javascript:
   - static/js/custom.js
+plugins:
+  - minify:
+      cache_safe: true
+      css_files:
+        - static/css/custom.css
+      js_files:
+        - static/js/custom.js
 
 copyright: Copyright &copy; Sergio Delgado Quintero<br>sdelquin@gmail.com
